@@ -85,17 +85,18 @@
 
                 <div class="resume-content mr-auto">
                       <p>
-                       To plot the fresh water levels for each nation at various points in time, i.e. past, present and future. 
-                       This will then be combined with the amount of water consumed by each nation and their population growth to predict when they will run out of water completely.
-                        Another
-                        interesting insight would be calculating the amount of water each nation can currently sanitise
-                        or Internal
-                        renewable freshwater resources by region.
+                       To plot the water stress scores for each nation at various points in time, i.e. past, present and future. 
+                       In order to calculate the water stress levels for any nation at any given time, we will do the following:
+                            1. Sum the amount of internal and external water for each nation, giving the total amount of available water for a given year  
+                            2. Calculate, as a ratio, the amount of water withdrawn with respect to the total water available to a nation
+                            3. Find the nation which was the highest water withdrawals with respect to the amount of water they have available 
+                            4. Divide the calculated ratio for each nation by this maximum, giving each nation a stress level score between 0 and 1. 
+                          
+                        Future water stress levels are predtions, which are split into three catagories: Pesimistic, Optimistic, and Bussiness as Usal
+                        Another interesting insight we hope to provide is where the water is going in each nation, i.e. agricultrual, industrial or domestic                         renewable freshwater resources by region.
                     </p>
                     <p>
-                        I also plan to allow users to interact with the map, such interactions might include clicking a
-                        country, and
-                        displaying inisghts into that specific country, e.g.
+                     Our main plot will be a geo json map showing the water stress levels for each nation, we will have a silder on the bottom that allows the users to see how the water stress levels chnage over time and what they will be in the futre
                     </p>
 <!--                     <p>
                         My objective is create a choropleth plot of the world where the colour represents the current
